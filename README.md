@@ -32,7 +32,22 @@ The project is built around a **multi-agent scaffold** orchestrated using **Fast
 
 ## 🚀 Setup & Execution Steps
 
-### Step 1️⃣ Clone the Repository
+### 1️)  Clone the Repository
 ```bash
 git clone https://github.com/sanskruti-nawander/B.E.-PROJECT_6G-SPATIAL-SPECTRUM.git
 cd B.E.-PROJECT_6G-SPATIAL-SPECTRUM
+```
+### 2)  Activate virtual environoment
+```bash
+.\venv\scripts\activate 
+```
+### 3)  Start Backend
+```bash
+uvicorn main:app
+```
+### 4)  Open live server 
+```bash
+index.html
+```
+
+
