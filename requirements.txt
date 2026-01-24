@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+aiohttp
+pypdf
+faiss-cpu
+sentence-transformers
+python-dotenv
+tqdm
+beautifulsoup4
+requests
+numpy
+pyngrok
+nest_asyncio
