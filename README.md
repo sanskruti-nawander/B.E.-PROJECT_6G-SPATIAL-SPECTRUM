@@ -1,34 +1,38 @@
-# 6G Dynamic Spectrum Allocation — Multi-Agent Scaffold
+# 6G Dynamic Spectrum Allocation using AI Agents
 
+## 📡 Overview
+This project focuses on **dynamic spectrum allocation for 6G networks** using a **multi-agent AI architecture**.  
+It integrates **AI agents, optimization techniques, and a Retrieval-Augmented Generation (RAG) backend** to ensure efficient, fair, and policy-compliant spectrum allocation.
 
-## Overview
-This scaffold wires your RAG backend (TRAI docs retrieval) into a multi-agent orchestration service built with FastAPI. Agents:
-- Master Agent (orchestrator)
-- Policy Guardian (RAG-based compliance checks)
-- Smart Allocator (Genetic Algorithm - sample)
-- Fairness Agent (Jain's fairness index)
-- Spectrum Agent (simulator / monitor)
+The system simulates real-world spectrum allocation challenges and demonstrates how intelligent agents collaborate to make optimized decisions in next-generation wireless networks.
 
+---
 
-## Quick start (Colab)
-1. Upload this repo to Colab or clone into your workspace.
-2. Install requirements: `pip install -r requirements.txt`.
-3. Copy your existing RAG code into `rag_backend/rag_engine.py` (or keep it replaced by provided adapter).
-4. Fill `.env` from `.env.example` with `OPENAI_API_KEY`.
-5. Run `python main.py` (the script starts FastAPI + ngrok if `USE_NGROK=true`).
+## 🧠 System Architecture
+The project is built around a **multi-agent scaffold** orchestrated using **FastAPI**.
 
+### Agents Included
+- **Master Agent (Orchestrator)** – Controls workflow and agent coordination  
+- **Policy Guardian Agent** – Ensures regulatory compliance using RAG (TRAI documents)  
+- **Smart Allocator Agent** – Uses Genetic Algorithm for optimal allocation  
+- **Fairness Agent** – Computes Jain’s Fairness Index  
+- **Spectrum Agent** – Simulates and monitors spectrum usage  
 
-## Endpoints
-- `GET /` - simple landing page
-- `POST /api/allocate` - main orchestration endpoint; payload described below
+---
 
+## 🏗️ Tech Stack
+- **Backend:** FastAPI, Uvicorn  
+- **AI / ML:** Python, Genetic Algorithms  
+- **RAG:** FAISS, embeddings  
+- **Frontend:** HTML, CSS, JavaScript  
+- **API:** REST  
+- **Environment:** Python Virtual Environment (`venv`)
 
-## Example allocation request
-```json
-{
-"request_id": "req-123",
-"regions": ["Pune", "Mumbai"],
-"bands": ["3.3-3.6GHz", "26GHz", "700MHz"],
-"demand": {"Pune": 100, "Mumbai": 200},
-"priorities": {"Pune": 1, "Mumbai": 2}
-}
+---
+
+## 🚀 Setup & Execution Steps
+
+### Step 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/sanskruti-nawander/B.E.-PROJECT_6G-SPATIAL-SPECTRUM.git
+cd B.E.-PROJECT_6G-SPATIAL-SPECTRUM
