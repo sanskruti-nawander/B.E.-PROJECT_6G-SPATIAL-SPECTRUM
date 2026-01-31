@@ -11,3 +11,7 @@ requests
 numpy
 pyngrok
 nest_asyncio
+streamlit
+numpy
+pandas
+openai
